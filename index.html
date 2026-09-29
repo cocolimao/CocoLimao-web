@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Coco Limão | Samba Reggae aus Bahia</title>
+
+<style>
+
+:root{
+  --green:#74c043;
+  --lime:#a9db3c;
+  --brown:#5d3418;
+  --dark:#222;
+  --light:#f7f7f7;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  color:#333;
+  line-height:1.6;
+}
+
+nav{
+  position:fixed;
+  width:100%;
+  background:white;
+  padding:15px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 2px 10px rgba(0,0,0,.1);
+  z-index:1000;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:bold;
+  color:var(--brown);
+}
+
+.logo span{
+  color:var(--green);
+}
+
+nav ul{
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+
+nav a{
+  text-decoration:none;
+  color:#333;
+  font-weight:bold;
+}
+
+.hero{
+  min-height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+  url("https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1600&q=80");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px;
+}
+
+.hero-content{
+  max-width:900px;
+}
+
+.hero h1{
+  font-size:5rem;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:1.4rem;
+  margin-bottom:30px;
+}
+
+.btn{
+  display:inline-block;
+  background:var(--green);
+  color:white;
+  padding:14px 30px;
+  border-radius:40px;
+  text-decoration:none;
+  margin:5px;
+  font-weight:bold;
+}
+
+.btn:hover{
+  background:var(--brown);
+}
+
+section{
+  padding:90px 7%;
+}
+
+h2{
+  color:var(--brown);
+  margin-bottom:30px;
+  font-size:2.5rem;
+}
+
+.cards{
+  display:grid;
+  gap:25px;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.light{
+  background:var(--light);
+}
+
+table{
+  width:100%;
+  background:white;
+  border-collapse:collapse;
+}
+
+th,td{
+  padding:15px;
+  border-bottom:1px solid #ddd;
+}
+
+.gallery{
+  display:grid;
+  gap:20px;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+}
+
+.gallery img{
+  width:100%;
+  border-radius:15px;
+  height:250px;
+  object-fit:cover;
+}
+
+.members{
+  background:#1f1f1f;
+  color:white;
+}
+
+.members h2{
+  color:var(--lime);
+}
+
+.dashboard{
+  display:grid;
+  gap:20px;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.widget{
+  background:#323232;
+  padding:25px;
+  border-radius:12px;
+}
+
+.contact-form{
+  max-width:700px;
+}
+
+input,
+textarea{
+  width:100%;
+  padding:15px;
+  margin-bottom:15px;
+  border:1px solid #ddd;
+  border-radius:8px;
+}
+
+button{
+  background:var(--green);
+  color:white;
+  border:none;
+  padding:15px 40px;
+  border-radius:30px;
+  cursor:pointer;
+}
+
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:35px;
+}
+
+@media(max-width:768px){
+
+nav{
+  flex-direction:column;
+  gap:10px;
+}
+
+nav ul{
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.hero h1{
+  font-size:3rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+Coco <span>Limão</span>
+</div>
+
+<ul>
+<li>#aboutÜber uns</a></li>
+<li>#termineTermine</a></li>
+<li>#galerieGalerie</a></li>
+<li>#mitgliedMitglied werden</a></li>
+<li>#internIntern</a></li>
+<li>#kontaktKontakt</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Coco Limão</h1>
+
+<p>
+Samba Reggae aus Bahia.
+Kraftvolle Rhythmen, brasilianische Lebensfreude und mitreißende Percussion für Festivals, Firmenfeiern und Stadtfeste.
+</p>
+
+#termineTermine ansehen</a>
+#kontaktBand buchen</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>Über uns</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Samba Reggae</h3>
+<p>Inspiriert von den Rhythmen Salvadors da Bahia.</p>
+</div>
+
+<div class="card">
+<h3>Gemeinschaft</h3>
+<p>Musik, Freundschaft und gemeinsame Auftritte.</p>
+</div>
+
+<div class="card">
+<h3>Live Energie</h3>
+<p>Mitreißende Shows bei Festivals, Firmenevents und Umzügen.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="termine" class="light">
+
+<h2>Termine</h2>
+
+<table>
+
+<tr>
+<th>Datum</th>
+<th>Veranstaltung</th>
+<th>Ort</th>
+</tr>
+
+<tr>
+<td>15.05.2027</td>
+<td>Stadtfest</td>
+<td>Rosenheim</td>
+</tr>
+
+<tr>
+<td>11.06.2027</td>
+<td>Sommerfestival</td>
+<td>München</td>
+</tr>
+
+<tr>
+<td>18.07.2027</td>
+<td>Bahia Night</td>
+<td>Bad Aibling</td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="galerie">
+
+<h2>Galerie</h2>
+
+<div class="gallery">
+
+https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=80
+
+https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80
+
+https://images.unsplash.com/photo-1507878866276-a947ef722fee?auto=format&fit=crop&w=1200&q=80
+
+</div>
+
+</section>
+
+<section id="mitglied" class="light">
+
+<h2>Mitglied werden</h2>
+
+<p>
+Du möchtest Percussion lernen oder Samba Reggae spielen?
+Dann komme zu einer Schnupperprobe vorbei.
+</p>
+
+<br>
+
+#kontakt
+Schnupperprobe vereinbaren
+</a>
+
+</section>
+
+<section id="intern" class="members">
+
+<h2>Mitgliederbereich</h2>
+
+<div class="dashboard">
+
+<div class="widget">
+<h3>Nächste Probe</h3>
+<p>Dienstag 19:30 Uhr</p>
+</div>
+
+<div class="widget">
+<h3>Notenarchiv</h3>
+<p>PDF-Dateien und Setlisten</p>
+</div>
+
+<div class="widget">
+<h3>Audioarchiv</h3>
+<p>Übungsaufnahmen und Playbacks</p>
+</div>
+
+<div class="widget">
+<h3>Medien</h3>
+<p>Bilder, Videos und Downloads</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="kontakt">
+
+<h2>Kontakt</h2>
+
+<div class="contact-form">
+
+<input type="text" placeholder="Name">
+
+<input type="email" placeholder="E-Mail">
+
+<textarea rows="6" placeholder="Nachricht"></textarea>
+
+<button>
+Nachricht senden
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Coco Limão</h3>
+
+<p>Samba Reggae aus Bahia</p>
+
+</footer>
+
+</body>
+</html>
